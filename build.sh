@@ -6,4 +6,4 @@ cargo fmt
 
 cargo build --all --release
 mkdir -p bin
-cp "$TARGET"/debug/claimer ./bin/
+cp "$TARGET"/release/bos-post-bot-rs ./bin/
