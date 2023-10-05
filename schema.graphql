@@ -1,0 +1,486 @@
+
+type _Schema_ @fulltext(
+	name: "nftSearch"
+	language: en
+	algorithm: rank
+	include: [{ entity: "Nft", fields: [{ name: "token_id" }, { name: "owner_id" }] }]
+)
+
+type Listing @entity {
+	id: ID!
+	seller_id: String!
+	contract_id: String!
+	token_id: String!
+	price: BigInt!
+	create_time: BigInt!
+	update_time: BigInt!
+	is_remove: Boolean!
+}
+
+type Offering @entity {
+	id: ID!
+	buyer_id: String!
+	contract_id: String!
+	token_id: String!
+	price: BigInt!
+	create_time: BigInt!
+	update_time: BigInt!
+	is_simple_offering: Boolean!
+	is_remove: Boolean!
+	expire_time: BigInt
+}
+
+enum TradingType {
+	BuyListing,
+	AcceptOffering
+}
+
+type Trading @entity {
+	id: ID!
+	trading_type: TradingType!
+	offering_id: String
+	offering: Offering
+	is_simple_offering: Boolean
+
+	listing_id: String
+	listing: Listing
+
+	nft_contract_id: String!
+	nft_token_id: String!
+	nft_approval_id: BigInt!
+	seller_id: String!
+	buyer_id: String!
+	prepaid_balance: BigInt!
+	payment_balance: BigInt!
+	payout_balance: BigInt!
+
+	transfer_detail: String!
+	tx_time: BigInt!
+}
+
+enum ActionType {
+	# market
+	create_listing_action,
+	update_listing_action,
+	remove_listing_action,
+	create_offering_action,
+	update_offering_action,
+	remove_offering_action,
+	buy_listing_action,
+	sold_listing_action,
+	accept_offering_action,
+	offering_accepted_action,
+
+
+	# nft
+	nft_mint_action,
+	nft_transfer_action,
+	nft_received_action,
+
+	nft_burn_action,
+	nft_register_action,
+	nft_unregister_action,
+	control_account_action,
+
+	# user setting
+	like_nft_action,
+	unlike_nft_action
+	watch_nft_action,
+	unwatch_nft_action,
+	read_notification_action
+
+}
+
+type UserAction @entity {
+	id: ID!
+	predecessor_id: String!
+	signer_id: String!
+	user_id: String!
+	timestamp: BigInt!
+	timestamp_plus_log_index: BigInt!
+	receipt_id: String!
+
+	# some action will use nft, take nft fields in entity for query
+	nft: Nft
+	contract_id: String
+	token_id: String
+
+	action_type: ActionType!
+
+	create_listing_action: CreateListingAction
+	update_listing_action: UpdateListingAction
+	remove_listing_action: RemoveListingAction
+
+	create_offering_action: CreateOfferingAction
+	update_offering_action: UpdateOfferingAction
+	remove_offering_action: RemoveOfferingAction
+
+	buy_listing_action: BuyListingAction
+	accept_offering_action: AcceptOfferingAction
+
+	nft_mint_action: NftMintAction,
+	nft_transfer_action: NftTransferAction,
+	nft_burn_action: NftBurnAction,
+	nft_register_action: NftRegisterAction,
+	nft_unregister_action: NftUnregisterAction,
+	control_account_action: ControlAccountAction,
+
+	like_nft_action: LikeNftAction,
+	unlike_nft_action: UnlikeNftAction,
+	watch_nft_action: WatchNftAction,
+	unwatch_nft_action: UnwatchNftAction,
+	read_notification_action: ReadNotificationAction
+}
+
+type CreateListingAction @entity {
+	id: ID!
+	price: BigInt!
+	listing_id: String!
+	listing: Listing!
+}
+
+type UpdateListingAction @entity {
+	id: ID!
+	old_price: BigInt!
+	new_price: BigInt!
+	listing_id: String!
+	listing: Listing!
+}
+
+type RemoveListingAction @entity {
+	id: ID!
+	price: BigInt!
+	listing_id: String!
+	listing: Listing!
+}
+
+type CreateOfferingAction @entity {
+	id: ID!
+	offer_creator: String!
+	nft_contract_id: String!
+	nft_token_id: String!
+	price: BigInt!
+	offering_id: String!
+	offering: Offering!
+}
+
+type UpdateOfferingAction @entity {
+	id: ID!
+	offer_creator: String!
+	nft_contract_id: String!
+	nft_token_id: String!
+	old_price: BigInt!
+	new_price: BigInt!
+	offering_id: String!
+	offering: Offering!
+}
+
+type RemoveOfferingAction @entity {
+	id: ID!
+	offer_creator: String!
+	nft_contract_id: String!
+	nft_token_id: String!
+	price: BigInt!
+	offering_id: String!
+	offering: Offering!
+}
+
+type BuyListingAction @entity {
+	id: ID!
+	buyer_id: String!
+	seller_id: String!
+	prepaid_balance: BigInt!
+	payment_balance: BigInt!
+	payout_balance: BigInt!
+	nft_contract_id: String!
+	nft_token_id: String!
+	trading_id: String!
+	trading: Trading!
+	listing_id: String!
+	listing: Listing!
+}
+
+#
+#type SoldListingAction @entity {
+#	id: ID!
+#	buyer_id: String!
+#	seller_id: String!
+#	prepaid_balance: BigInt!
+#	payment_balance: BigInt!
+#	payout_balance: BigInt!
+#	nft_contract_id: String!
+#	nft_token_id: String!
+#	trading_id: String!
+#	trading: Trading!
+#	listing_id: String!
+#	listing: Listing!
+#}
+
+type AcceptOfferingAction @entity {
+	id: ID!
+	buyer_id: String!
+	seller_id: String!
+	prepaid_balance: BigInt!
+	payment_balance: BigInt!
+	payout_balance: BigInt!
+	nft_contract_id: String!
+	nft_token_id: String!
+	trading_id: String!
+	trading: Trading!
+	offering_id: String!
+	offering: Offering!
+}
+#
+#type OfferingAcceptedAction @entity {
+#	id: ID!
+#	buyer_id: String!
+#	seller_id: String!
+#	prepaid_balance: BigInt!
+#	payment_balance: BigInt!
+#	payout_balance: BigInt!
+#	nft_contract_id: String!
+#	nft_token_id: String!
+#	trading_id: String!
+#	trading: Trading!
+#	offering_id: String!
+#	offering: Offering!
+#}
+
+type NftMintAction @entity {
+	id: ID!
+	owner_id: String!
+	contract_id: String!
+	token_id: String!
+}
+
+type NftTransferAction @entity {
+	id: ID!
+	old_owner_id: String!
+	new_owner_id: String!
+	token_id: String!
+	authorized_id: String
+	memo: String
+}
+
+#type NftReceivedAction @entity {
+#	id: ID!
+#	old_owner_id: String!
+#	new_owner_id: String!
+#	token_id: String!
+#	authorized_id: String
+#	memo: String
+#}
+
+type NftBurnAction @entity {
+	id: ID!
+	token_id: String!
+	authorized_id: String
+	memo: String
+}
+
+type NftRegisterAction @entity {
+	id: ID!
+	registrant_id: String!
+	minter_id: String!
+}
+
+type NftUnregisterAction @entity {
+	id: ID!
+	registrant_id: String!
+	public_key: String!
+	is_force: Boolean!
+	is_control_success: Boolean!
+}
+
+type ControlAccountAction @entity {
+	id: ID!
+	account_id: String!
+	public_key: String!
+}
+
+type LikeNftAction @entity {
+	id: ID!
+	nft_contract_id: String!
+	nft_token_id: String!
+}
+
+type UnlikeNftAction @entity {
+	id: ID!
+	nft_contract_id: String!
+	nft_token_id: String!
+}
+
+type WatchNftAction @entity {
+	id: ID!
+	nft_contract_id: String!
+	nft_token_id: String!
+}
+
+type UnwatchNftAction @entity {
+	id: ID!
+	nft_contract_id: String!
+	nft_token_id: String!
+}
+
+type ReadNotificationAction @entity {
+	id: ID!
+	timestamp: BigInt!
+}
+
+type MarketSummary @entity {
+	id: ID!
+	volume: BigInt!
+	trading_sum: BigInt!
+	listing_sum: BigInt!
+	nft_minted_sum: BigInt!
+}
+
+# Nft entities
+
+
+type Nft @entity {
+	id: ID!
+	contract_id: String!
+	token_id: String!
+	owner_id: String
+	is_burn: Boolean!
+	metadata: TokenMetadata
+
+	search_name: String!
+	search_name_len: Int!
+
+	mint_time: BigInt
+
+	name_len: Int!
+	name_level: Int!
+
+	nft_approve_id_for_market_contract: Int
+	nft_approve_id_in_market_contract: Int
+	is_approve_id_effective_in_market_contract: Boolean!
+
+	price: BigInt
+	listing: Listing
+
+	liked_sum: Int!
+	watched_sum: Int!
+	like_by_users: [UserLikeNft!]! @derivedFrom(field: "nft")
+	watch_by_users: [UserWatchNft!]! @derivedFrom(field: "nft")
+
+}
+
+type TokenMetadata @entity {
+	id: ID!
+	title: String
+	description: String
+	media: String
+	media_hash: String
+	copies: BigInt
+	issued_at: String
+	expires_at: String
+	starts_at: String
+	updated_at: String
+	extra: String
+	reference: String
+	reference_hash: String
+}
+
+type UserLikeNft @entity {
+	id: ID!
+	user: User!
+	nft: Nft!
+}
+
+type User @entity {
+
+	id: ID!
+	account_id: String!
+	mint_times: Int!
+	burn_times: Int!
+	listing_times: Int!
+	buy_listing_times: Int!
+	offer_times: Int!
+	accept_offer_times: Int!
+	transfer_times: Int!
+	trading_times: Int!
+	trading_volume: BigInt!
+	first_interaction_time: BigInt!
+	last_read_notification_time: BigInt!
+	last_interaction_time: BigInt!
+
+	like_sum: Int!
+	watch_sum: Int!
+
+	like_nfts: [UserLikeNft!]! @derivedFrom(field: "user")
+	watch_nfts: [UserWatchNft!]! @derivedFrom(field: "user")
+
+
+}
+
+type UserWatchNft @entity {
+	id: ID!
+	user: User!
+	nft: Nft!
+}
+
+type Notification @entity {
+	id: ID!
+	receiver: String
+	receipt_id: String!
+	contract_id: String!
+	timestamp: BigInt!
+	timestamp_plus_log_index: BigInt!
+	notification_type: NotificationType!
+	nft_liked_notification: NftLikedNotification
+	nft_watched_notification: NftWatchedNotification
+	offer_accepted_notification: OfferAcceptedNotification
+	listing_sold_notification: ListingSoldNotification
+	receive_offer_notification: ReceiveOfferNotification
+	offer_update_notification: OfferUpdateNotification
+	receive_nft_notification: ReceiveNftNotification
+}
+
+enum NotificationType {
+	nft_liked_notification
+	nft_watched_notification
+	offer_update_notification
+	receive_offer_notification
+	offer_accepted_notification
+	listing_sold_notification
+	receive_nft_notification
+}
+
+type NftLikedNotification @entity {
+	id: ID!
+	account_id: String!
+	nft_contract_id: String!
+	nft_token_id: String!
+	nft: Nft!
+}
+type NftWatchedNotification  @entity {
+	id: ID!
+	account_id: String!
+	nft_contract_id: String!
+	nft_token_id: String!
+	nft: Nft!
+}
+type OfferAcceptedNotification  @entity {
+	id: ID!
+	accept_offering_action: AcceptOfferingAction!
+}
+type ListingSoldNotification  @entity {
+	id: ID!
+	buy_listing_action: BuyListingAction!
+}
+type ReceiveOfferNotification  @entity {
+	id: ID!
+	create_offering_action: CreateOfferingAction!
+}
+type OfferUpdateNotification  @entity {
+	id: ID!
+	update_offering_action: UpdateOfferingAction!
+}
+
+type ReceiveNftNotification @entity {
+	id: ID!
+	nft_transfer_action: NftTransferAction!
+}
