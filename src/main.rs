@@ -138,7 +138,7 @@ async fn main() -> anyhow::Result<()> {
         .await?;
 
     let account = Account::from_file(
-        get_dir_path("hjg1986.near"),
+        get_dir_path("bot.namesky.near"),
         &worker,
     )?;
 
