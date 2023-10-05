@@ -1,4 +1,3 @@
-
 use near_units::parse_gas;
 
 use crate::*;
@@ -28,17 +27,17 @@ pub fn get_nft_url(token_id: &str) -> String {
 pub fn render_post_json(account_id: AccountId, post_text: String) -> Value {
     json!({
         "data": json!({
-			account_id: json!({ 
-				"post": json!({
-					"main": json!({"type": "md", "text": post_text}).to_string(),
-				}),
-				"index": json!({
-					"post": json!({
-						"key": "main",
-						"value": json!({"type": "md"})
-					}).to_string()
-				})
-			})
+            account_id: json!({
+                "post": json!({
+                    "main": json!({"type": "md", "text": post_text}).to_string(),
+                }),
+                "index": json!({
+                    "post": json!({
+                        "key": "main",
+                        "value": json!({"type": "md"})
+                    }).to_string()
+                })
+            })
         }),
     })
 }
@@ -91,14 +90,15 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
     .to_string()
 }
 
-pub async fn send_post(signer: &Account, post_text: String)->ExecutionFinalResult {
-	let contract_id = NEAR_SOCIAL_CONTRACT_ID.parse().unwrap();
-    signer.call(&contract_id, "set")
-    .args_json(render_post_json(signer.id().clone(), post_text))
-	.gas(parse_gas!("50 Tgas") as u64)
-	.transact()
-	.await
-	.unwrap()
+pub async fn send_post(signer: &Account, post_text: String) -> ExecutionFinalResult {
+    let contract_id = NEAR_SOCIAL_CONTRACT_ID.parse().unwrap();
+    signer
+        .call(&contract_id, "set")
+        .args_json(render_post_json(signer.id().clone(), post_text))
+        .gas(parse_gas!("50 Tgas") as u64)
+        .transact()
+        .await
+        .unwrap()
 }
 
 #[test]

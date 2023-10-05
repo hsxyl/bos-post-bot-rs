@@ -137,18 +137,16 @@ async fn main() -> anyhow::Result<()> {
         .rpc_addr("https://1rpc.io/near")
         .await?;
 
-    let account = Account::from_file(
-        get_dir_path("bot.namesky.near"),
-        &worker,
-    )?;
+    let account = Account::from_file(get_dir_path("bot.namesky.near"), &worker)?;
 
-    if data.userActions.len()>0 {
-        let post_text =data.userActions
-        .into_iter()
-        .map(|user_action| build_post_text_by_user_action(user_action))
-        .join("\n");
+    if data.userActions.len() > 0 {
+        let post_text = data
+            .userActions
+            .into_iter()
+            .map(|user_action| build_post_text_by_user_action(user_action))
+            .join("\n");
         send_post(&account, post_text).await.into_result()?;
     }
-    
+
     Ok(())
 }

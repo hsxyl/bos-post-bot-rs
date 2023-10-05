@@ -1,6 +1,8 @@
 debug/
 target/
 
+bin/
+
 **/*.rs.bk
 .idea
 .env
