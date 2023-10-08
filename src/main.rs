@@ -54,7 +54,7 @@ async fn main() -> anyhow::Result<()> {
         .rpc_addr("https://1rpc.io/near")
         .await?;
 
-    let account = Account::from_file(get_dir_path("hjg1986.near"), &worker)?;
+    let account = Account::from_file(get_dir_path("bot.namesky.near"), &worker)?;
 
     if data.userActions.len() > 0 {
         let latest_timestamp = data
