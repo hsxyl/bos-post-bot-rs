@@ -47,7 +47,7 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
     match user_action.action_type {
         user_action::ActionType::create_listing_action => {
             format!(
-                "{} is selling for {}. (Buy it now)[{}]!",
+                "{} is selling for {}. [Buy it now]({})!",
                 user_action.token_id,
                 to_human(user_action.create_listing_action.unwrap().price),
                 get_nft_url(user_action.token_id.as_str())
@@ -55,7 +55,7 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
         }
         user_action::ActionType::update_listing_action => {
             format!(
-                "{} is selling for {}. (Buy it now)[{}]!",
+                "{} is selling for {}. [Buy it now]({})!",
                 user_action.token_id,
                 to_human(user_action.update_listing_action.unwrap().new_price),
                 get_nft_url(user_action.token_id.as_str())
@@ -63,7 +63,7 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
         }
         user_action::ActionType::create_offering_action => {
             format!(
-                "{} received an offer for {}. (Check it now)[{}]!",
+                "{} received an offer for {}. [Check it now]({})!",
                 user_action.token_id,
                 to_human(user_action.update_listing_action.unwrap().new_price),
                 get_nft_url(user_action.token_id.as_str())
@@ -71,7 +71,7 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
         }
         user_action::ActionType::update_offering_action => {
             format!(
-                "{} received an offer for {}. (Check it now)[{}]!",
+                "{} received an offer for {}. [Check it now]({})!",
                 user_action.token_id,
                 to_human(user_action.update_listing_action.unwrap().new_price),
                 get_nft_url(user_action.token_id.as_str())
@@ -92,6 +92,7 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
 
 pub async fn send_post(signer: &Account, post_text: String) -> ExecutionFinalResult {
     let contract_id = NEAR_SOCIAL_CONTRACT_ID.parse().unwrap();
+    dbg!(signer, &post_text);
     signer
         .call(&contract_id, "set")
         .args_json(render_post_json(signer.id().clone(), post_text))

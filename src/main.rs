@@ -1,3 +1,4 @@
+use std::env;
 use std::{collections::HashMap, path::Path};
 
 use anyhow::Ok;
@@ -24,97 +25,144 @@ struct Vars {
 }
 
 #[derive(Deserialize, Debug)]
-pub struct Data {
+pub struct UserActionData {
     pub userActions: Vec<UserAction>,
 }
 
+const FILE_PATH: &str = "nano_timestamp";
+
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
+    let args: Vec<String> = env::args().collect();
+
+    let nano_timestamp: u128 = if args.len() > 1 {
+        args[1].parse()?
+    } else {
+        read_u128(FILE_PATH)
+    };
+
+    // let signer_id = args[1].clone();
+    // let signer = get_signer(signer_id.as_str());
+
+    // let func = args[2].clone();
+
+    let data = query_user_action(nano_timestamp).await;
+
+    dbg!(&data);
+
+    let worker = workspaces::mainnet()
+        .rpc_addr("https://1rpc.io/near")
+        .await?;
+
+    let account = Account::from_file(get_dir_path("hjg1986.near"), &worker)?;
+
+    if data.userActions.len() > 0 {
+        let latest_timestamp = data
+            .userActions
+            .iter()
+            .map(|user_action| u128::from_str_radix(user_action.timestamp.as_str(), 10).unwrap())
+            .max();
+        let post_text = data
+            .userActions
+            .into_iter()
+            .map(|user_action| build_post_text_by_user_action(user_action))
+            .join("\n");
+
+        send_post(&account, post_text).await.into_result()?;
+        if latest_timestamp.is_some() {
+            write_u128(latest_timestamp.unwrap(), FILE_PATH);
+        }
+    }
+
+    Ok(())
+}
+
+pub async fn query_user_action(nano_timestamp: u128) -> UserActionData {
     let endpoint = "https://api.thegraph.com/subgraphs/name/hsxyl/namesky-production";
     let query = r#"
-    query GetUserActionsByUserId(
-        $last_timestamp: BigInt = ""
-        $action_types: [String]
+  query GetUserActionsByUserId(
+      $last_timestamp: BigInt = ""
+      $action_types: [String]
+    ) {
+      userActions(
+        first: 10
+        orderBy: timestamp_plus_log_index
+        orderDirection: desc
+        where: { timestamp_gt: $last_timestamp, action_type_in: $action_types }
       ) {
-        userActions(
-          first: 10
-          orderBy: timestamp_plus_log_index
-          orderDirection: desc
-          where: { timestamp_gt: $last_timestamp, action_type_in: $action_types }
-        ) {
-          id
-          user_id
-          timestamp
-          receipt_id
+        id
+        user_id
+        timestamp
+        receipt_id
 
-          contract_id
-          token_id
+        contract_id
+        token_id
 
-          action_type
+        action_type
 
-          create_listing_action {
-            price
-            listing_id
-            listing {
-              seller_id
-              price
-            }
-          }
-          # listing
-          update_listing_action {
-            old_price
-            new_price
-            listing {
-              seller_id
-              price
-            }
-          }
-     
-          buy_listing_action {
-            buyer_id
+        create_listing_action {
+          price
+          listing_id
+          listing {
             seller_id
-            payout_balance
-            payment_balance
-          }
-          # offer
-          create_offering_action {
-            offer_creator
             price
-            offering_id
-          }
-          update_offering_action {
-            offer_creator
-            old_price
-            new_price
-            offering_id
-          }
-          accept_offering_action {
-            buyer_id
-            seller_id
-            payout_balance # this is the amount the seller gets
-            payment_balance # this is the amount of the offer
-          }
-      
-          # nft
-          nft_mint_action {
-            token_id
-            owner_id
-          }
-          nft_transfer_action {
-            token_id
-            old_owner_id
-            new_owner_id
-          }
-          nft_burn_action {
-            token_id
           }
         }
+        # listing
+        update_listing_action {
+          old_price
+          new_price
+          listing {
+            seller_id
+            price
+          }
+        }
+   
+        buy_listing_action {
+          buyer_id
+          seller_id
+          payout_balance
+          payment_balance
+        }
+        # offer
+        create_offering_action {
+          offer_creator
+          price
+          offering_id
+        }
+        update_offering_action {
+          offer_creator
+          old_price
+          new_price
+          offering_id
+        }
+        accept_offering_action {
+          buyer_id
+          seller_id
+          payout_balance # this is the amount the seller gets
+          payment_balance # this is the amount of the offer
+        }
+    
+        # nft
+        nft_mint_action {
+          token_id
+          owner_id
+        }
+        nft_transfer_action {
+          token_id
+          old_owner_id
+          new_owner_id
+        }
+        nft_burn_action {
+          token_id
+        }
       }
-    "#;
+    }
+  "#;
 
     let client = Client::new(endpoint);
     let vars = Vars {
-        last_timestamp: Some(half_hour_ago_timestamp().to_string()),
+        last_timestamp: Some(nano_timestamp.to_string()),
         action_types: vec![
             "create_listing_action".to_string(),
             "update_listing_action".to_string(),
@@ -126,27 +174,9 @@ async fn main() -> anyhow::Result<()> {
         ],
     };
     let data = client
-        .query_with_vars::<Data, Vars>(query, vars)
+        .query_with_vars::<UserActionData, Vars>(query, vars)
         .await
         .unwrap()
         .unwrap();
-
-    dbg!(&data);
-
-    let worker = workspaces::mainnet()
-        .rpc_addr("https://1rpc.io/near")
-        .await?;
-
-    let account = Account::from_file(get_dir_path("bot.namesky.near"), &worker)?;
-
-    if data.userActions.len() > 0 {
-        let post_text = data
-            .userActions
-            .into_iter()
-            .map(|user_action| build_post_text_by_user_action(user_action))
-            .join("\n");
-        send_post(&account, post_text).await.into_result()?;
-    }
-
-    Ok(())
+    data
 }
