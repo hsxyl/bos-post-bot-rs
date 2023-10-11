@@ -44,7 +44,6 @@ pub fn render_post_json(account_id: AccountId, post_text: String) -> Value {
 }
 
 pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
-    // near_units::near::to_human(input)
     match user_action.action_type {
         user_action::ActionType::create_listing_action => {
             format!(
@@ -66,7 +65,7 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
             format!(
                 "{} received an offer for {}. [Check it now]({})!",
                 user_action.token_id,
-                to_human(user_action.update_listing_action.unwrap().new_price),
+                to_human(user_action.create_offering_action.unwrap().price),
                 get_nft_url(user_action.token_id.as_str())
             )
         }
@@ -74,12 +73,26 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
             format!(
                 "{} received an offer for {}. [Check it now]({})!",
                 user_action.token_id,
-                to_human(user_action.update_listing_action.unwrap().new_price),
+                to_human(user_action.update_offering_action.unwrap().new_price),
                 get_nft_url(user_action.token_id.as_str())
             )
         }
-        user_action::ActionType::buy_listing_action => todo!(),
-        user_action::ActionType::accept_offering_action => todo!(),
+        user_action::ActionType::buy_listing_action => {
+            format!(
+                "🎉🎉🎉Congratulations on [{}]({}) sold at {} !",
+                user_action.token_id,
+                get_nft_url(user_action.token_id.as_str()),
+                to_human(user_action.buy_listing_action.unwrap().payment_balance)
+            )
+        },
+        user_action::ActionType::accept_offering_action => {
+            format!(
+                "🎉🎉🎉Congratulations on [{}]({}) sold at {} !",
+                user_action.token_id,
+                get_nft_url(user_action.token_id.as_str()),
+                to_human(user_action.accept_offering_action.unwrap().payment_balance)
+            )
+        },
         user_action::ActionType::nft_mint_action => {
             format!(
                 "{} just mint into NFT. [Check it now]({})!",
