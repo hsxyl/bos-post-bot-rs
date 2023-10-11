@@ -14,8 +14,18 @@ gql_client = "1.0.7"
 itertools = "0.10.0"
 near-units = "0.2.0"
 near-primitives = "0.17.0"
-
-workspaces = { git="https://github.com/near/near-workspaces-rs.git",  rev= "26ca5ae" }
 serde = "1.0.188"
 serde_json = "1.0.107"
 dirs = "3.0"
+near-workspaces = "0.8.0"
+
+clap="4.3.24"
+clap_lex="0.5.0"
+
+[dependencies.near-gas]
+version = "0.2.3"
+features = [
+    "serde",
+    "borsh",
+    "schemars",
+]

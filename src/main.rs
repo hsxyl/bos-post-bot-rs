@@ -5,12 +5,12 @@ use anyhow::Ok;
 use gql_client::Client;
 use itertools::Itertools;
 use near_units::{near::to_human, parse_near};
+use near_workspaces::Account;
+use near_workspaces::{result::ExecutionFinalResult, AccountId};
 use serde::{Deserialize, Serialize};
 use serde_json::{json, Value};
 use user_action::UserAction;
 use utils::*;
-use workspaces::Account;
-use workspaces::{result::ExecutionFinalResult, AccountId};
 
 use crate::post::*;
 
@@ -35,10 +35,12 @@ const FILE_PATH: &str = "nano_timestamp";
 async fn main() -> anyhow::Result<()> {
     let args: Vec<String> = env::args().collect();
 
-    let nano_timestamp: u128 = if args.len() > 1 {
-        args[1].parse()?
-    } else {
-        read_u128(FILE_PATH)
+    let nano_timestamp = match args[1].as_str() {
+        "-f" => read_u128(args[2].as_str()),
+        "-t" => args[2].parse()?,
+        _ => {
+            unreachable!()
+        }
     };
 
     // let signer_id = args[1].clone();
@@ -50,7 +52,7 @@ async fn main() -> anyhow::Result<()> {
 
     dbg!(&data);
 
-    let worker = workspaces::mainnet()
+    let worker = near_workspaces::mainnet()
         .rpc_addr("https://1rpc.io/near")
         .await?;
 

@@ -1,3 +1,4 @@
+use near_gas::NearGas;
 use near_units::parse_gas;
 
 use crate::*;
@@ -96,7 +97,7 @@ pub async fn send_post(signer: &Account, post_text: String) -> ExecutionFinalRes
     signer
         .call(&contract_id, "set")
         .args_json(render_post_json(signer.id().clone(), post_text))
-        .gas(parse_gas!("50 Tgas") as u64)
+        .gas(NearGas::from_tgas(50))
         .transact()
         .await
         .unwrap()
