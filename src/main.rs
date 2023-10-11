@@ -29,24 +29,17 @@ pub struct UserActionData {
     pub userActions: Vec<UserAction>,
 }
 
-const FILE_PATH: &str = "nano_timestamp";
-
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let args: Vec<String> = env::args().collect();
 
-    let nano_timestamp = match args[1].as_str() {
-        "-f" => read_u128(args[2].as_str()),
-        "-t" => args[2].parse()?,
-        _ => {
-            unreachable!()
-        }
+    let filepath = args[1].as_str();
+
+    let nano_timestamp = if args.len() == 2 {
+        read_u128(filepath)
+    } else {
+        args[2].parse()?
     };
-
-    // let signer_id = args[1].clone();
-    // let signer = get_signer(signer_id.as_str());
-
-    // let func = args[2].clone();
 
     let data = query_user_action(nano_timestamp).await;
 
@@ -72,7 +65,7 @@ async fn main() -> anyhow::Result<()> {
 
         send_post(&account, post_text).await.into_result()?;
         if latest_timestamp.is_some() {
-            write_u128(latest_timestamp.unwrap(), FILE_PATH);
+            write_u128(latest_timestamp.unwrap(), &filepath);
         }
     }
 
