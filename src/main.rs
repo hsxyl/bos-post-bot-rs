@@ -164,8 +164,8 @@ pub async fn query_user_action(nano_timestamp: u128) -> UserActionData {
             "create_offering_action".to_string(),
             "update_offering_action".to_string(),
             "nft_mint_action".to_string(),
-            // "buy_listing_action".to_string(),
-            // "accept_offering_action".to_string(),
+            "buy_listing_action".to_string(),
+            "accept_offering_action".to_string(),
         ],
     };
     let data = client
