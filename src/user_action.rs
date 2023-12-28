@@ -24,7 +24,7 @@ pub enum ActionType {
 }
 
 impl ActionType {
-    fn post_text(&self, user_action: UserAction) {
+    fn post_text(&self, _user_action: UserAction) {
         match self {
             ActionType::create_listing_action => todo!(),
             ActionType::update_listing_action => todo!(),

@@ -2,10 +2,8 @@ use std::{
     fs::File,
     io::{Read, Write},
     path::PathBuf,
-    time::{Duration, SystemTime, UNIX_EPOCH},
+    time::{SystemTime, UNIX_EPOCH},
 };
-
-use crate::*;
 
 pub mod u128_dec_format {
     use serde::{de, Deserialize, Deserializer, Serializer};
@@ -46,21 +44,34 @@ pub fn get_dir_path(account_id: &str) -> PathBuf {
 
 pub fn read_u128(path: &str) -> u128 {
     let mut file = File::open(path).expect("Can't open file");
-    let mut buf = [0u8; 16];
-    file.read_exact(&mut buf).expect("Can't read file");
-    let nb = u128::from_be_bytes(buf);
+    let mut contents = String::new();
+    file.read_to_string(&mut contents).expect("Can't read file content to string");
+    let nb = contents.parse().expect("Can't parse file contents to u128");
     dbg!(path, nb);
     nb
 }
 
 pub fn write_u128(val: u128, path: &str) {
-    dbg!(&val, path);
-    let mut file = File::create(path).expect("Can't create file");
-    let bytes = val.to_be_bytes();
-    file.write_all(&bytes).expect("Can't write file");
+    // 写入字符串到文件
+    let mut output_file = File::create(path).expect("Can't create file");
+    let data = val.to_string();
+    output_file.write_all(data.as_bytes()).expect("Can't write file");
 }
 
 #[test]
 pub fn test_time() {
     dbg!(&half_hour_ago_timestamp().to_string());
+}
+
+#[test]
+pub fn test_write_file() {
+    write_u128(1703766782635931621, "testfile");
+
+}
+
+#[test]
+pub fn test_read_file() {
+    let u = read_u128("testfile");
+    dbg!(&u);
+
 }

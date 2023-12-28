@@ -1,5 +1,4 @@
 use near_gas::NearGas;
-use near_units::parse_gas;
 
 use crate::*;
 
@@ -84,7 +83,7 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
                 get_nft_url(user_action.token_id.as_str()),
                 to_human(user_action.buy_listing_action.unwrap().payment_balance)
             )
-        },
+        }
         user_action::ActionType::accept_offering_action => {
             format!(
                 "🎉🎉🎉Congratulations on [{}]({}) sold at {} !",
@@ -92,7 +91,7 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
                 get_nft_url(user_action.token_id.as_str()),
                 to_human(user_action.accept_offering_action.unwrap().payment_balance)
             )
-        },
+        }
         user_action::ActionType::nft_mint_action => {
             format!(
                 "{} just mint into NFT. [Check it now]({})!",
@@ -106,7 +105,6 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
 
 pub async fn send_post(signer: &Account, post_text: String) -> ExecutionFinalResult {
     let contract_id = NEAR_SOCIAL_CONTRACT_ID.parse().unwrap();
-    dbg!(signer, &post_text);
     signer
         .call(&contract_id, "set")
         .args_json(render_post_json(signer.id().clone(), post_text))

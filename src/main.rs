@@ -1,10 +1,9 @@
 use std::env;
-use std::{collections::HashMap, path::Path};
 
 use anyhow::Ok;
 use gql_client::Client;
 use itertools::Itertools;
-use near_units::{near::to_human, parse_near};
+use near_units::near::to_human;
 use near_workspaces::Account;
 use near_workspaces::{result::ExecutionFinalResult, AccountId};
 use serde::{Deserialize, Serialize};
@@ -45,28 +44,34 @@ async fn main() -> anyhow::Result<()> {
 
     dbg!(&data);
 
-    let worker = near_workspaces::mainnet()
-        .rpc_addr("https://1rpc.io/near")
-        .await?;
-
-    let account = Account::from_file(get_dir_path("bot.namesky.near"), &worker)?;
-
     if data.userActions.len() > 0 {
+
+        let worker = near_workspaces::mainnet()
+            .rpc_addr("https://1rpc.io/near")
+            .await?;
+
+        let account = Account::from_file(get_dir_path("bot.namesky.near"), &worker)?;
+
         let latest_timestamp = data
             .userActions
             .iter()
             .map(|user_action| u128::from_str_radix(user_action.timestamp.as_str(), 10).unwrap())
-            .max();
+            .max()
+            .expect("Should have latest timestamp");
         let post_text = data
             .userActions
             .into_iter()
             .map(|user_action| build_post_text_by_user_action(user_action))
             .join("\n");
 
-        send_post(&account, post_text).await.into_result()?;
-        if latest_timestamp.is_some() {
-            write_u128(latest_timestamp.unwrap(), &filepath);
-        }
+        send_post(&account, post_text.clone()).await.into_result()?;
+        write_u128(latest_timestamp, &filepath);
+        dbg!(
+            "Query actions by {}, latest timestamp: {}, post_text: {}",
+            nano_timestamp,
+            latest_timestamp,
+            post_text
+        );
     }
 
     Ok(())
