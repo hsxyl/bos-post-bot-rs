@@ -46,7 +46,8 @@ pub fn read_u128(path: &str) -> u128 {
     let mut file = File::open(path).expect("Can't open file");
     let mut contents = String::new();
     file.read_to_string(&mut contents).expect("Can't read file content to string");
-    let nb = contents.parse().expect("Can't parse file contents to u128");
+    let pure_contents = contents.replace("\n", "");
+    let nb = pure_contents.parse().expect("Can't parse file contents to u128");
     dbg!(path, nb);
     nb
 }
@@ -71,7 +72,7 @@ pub fn test_write_file() {
 
 #[test]
 pub fn test_read_file() {
-    let u = read_u128("testfile");
+    let u = read_u128("nano_timestamp");
     dbg!(&u);
 
 }

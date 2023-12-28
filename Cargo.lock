@@ -461,8 +461,10 @@ name = "bos-post-bot-rs"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "chrono",
  "clap 4.3.24",
  "clap_lex 0.5.0",
+ "clokwerk",
  "dirs",
  "gql_client",
  "itertools",
@@ -754,6 +756,15 @@ name = "clap_lex"
 version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2da6da31387c7e4ef160ffab6d5e7f00c42626fe39aea70a7b0f1773f7dd6c1b"
+
+[[package]]
+name = "clokwerk"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bd108d365fcb6d7eddf17a6718eb6a33db18ba4178f8cc6b667f480710f10d76"
+dependencies = [
+ "chrono",
+]
 
 [[package]]
 name = "colorchoice"
