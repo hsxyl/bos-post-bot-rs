@@ -1,6 +1,12 @@
-use near_gas::NearGas;
-
 use crate::*;
+use anyhow::{anyhow, Ok};
+use near_crypto::InMemorySigner;
+use near_gas::NearGas;
+use near_jsonrpc_client::methods;
+use near_primitives::{
+    transaction::{Action, FunctionCallAction, Transaction},
+    types::{AccountId, BlockReference},
+};
 
 const NEAR_SOCIAL_CONTRACT_ID: &str = "social.near";
 const NAMESKY_DOMAIN: &str = "namesky.app";
@@ -89,7 +95,9 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
                 "🎉🎉🎉Congratulations on [{}]({}) sold at {} !",
                 user_action.token_id,
                 get_nft_url(user_action.token_id.as_str()),
-                to_human(user_action.accept_offering_action.unwrap().payment_balance)
+                convert_near_amount_to_human_readable(
+                    user_action.accept_offering_action.unwrap().payment_balance
+                )
             )
         }
         user_action::ActionType::nft_mint_action => {
@@ -103,15 +111,66 @@ pub fn build_post_text_by_user_action(user_action: UserAction) -> String {
     .to_string()
 }
 
-pub async fn send_post(signer: &Account, post_text: String) -> ExecutionFinalResult {
+// pub async fn send_post(signer: &Account, post_text: String) -> ExecutionFinalResult {
+//     let contract_id = NEAR_SOCIAL_CONTRACT_ID.parse().unwrap();
+//     signer
+//         .call(&contract_id, "set")
+//         .args_json(render_post_json(signer.id().clone(), post_text))
+//         .gas(NearGas::from_tgas(50))
+//         .transact()
+//         .await
+//         .unwrap()
+// }
+
+pub async fn send_post(
+    signer: &InMemorySigner,
+    client: &JsonRpcClient,
+    post_text: String,
+) -> anyhow::Result<()> {
+    // let signer = near_crypto::InMemorySigner::from_secret_key(signer_account_id, signer_secret_key);
+
+    let access_key_query_response = client
+        .call(methods::query::RpcQueryRequest {
+            block_reference: BlockReference::latest(),
+            request: near_primitives::views::QueryRequest::ViewAccessKey {
+                account_id: signer.account_id.clone(),
+                public_key: signer.public_key.clone(),
+            },
+        })
+        .await?;
+
+    let current_nonce = match access_key_query_response.kind {
+        near_jsonrpc_primitives::types::query::QueryResponseKind::AccessKey(access_key) => {
+            access_key.nonce
+        }
+        _ => Err(anyhow!("failed to extract current nonce"))?,
+    };
+
     let contract_id = NEAR_SOCIAL_CONTRACT_ID.parse().unwrap();
-    signer
-        .call(&contract_id, "set")
-        .args_json(render_post_json(signer.id().clone(), post_text))
-        .gas(NearGas::from_tgas(50))
-        .transact()
-        .await
-        .unwrap()
+
+    let transaction = Transaction {
+        signer_id: signer.account_id.clone(),
+        public_key: signer.public_key.clone(),
+        nonce: current_nonce + 1,
+        receiver_id: contract_id,
+        block_hash: access_key_query_response.block_hash,
+        actions: vec![Action::FunctionCall(Box::new(FunctionCallAction {
+            method_name: "set".to_string(),
+            args: render_post_json(signer.account_id.clone(), post_text)
+                .to_string()
+                .into_bytes(),
+            gas: 100_000_000_000_000, // 100 TeraGas
+            deposit: 0,
+        }))],
+    };
+
+    let request = methods::broadcast_tx_async::RpcBroadcastTxAsyncRequest {
+        signed_transaction: transaction.sign(signer),
+    };
+
+    let tx_hash = client.call(request).await?;
+
+    Ok(())
 }
 
 #[test]

@@ -3,9 +3,8 @@ use std::env;
 use anyhow::Ok;
 use gql_client::Client;
 use itertools::Itertools;
+use near_jsonrpc_client::JsonRpcClient;
 use near_units::near::to_human;
-use near_workspaces::Account;
-use near_workspaces::{result::ExecutionFinalResult, AccountId};
 use serde::{Deserialize, Serialize};
 use serde_json::{json, Value};
 use user_action::UserAction;
@@ -45,12 +44,10 @@ async fn main() -> anyhow::Result<()> {
     dbg!(&data);
 
     if data.userActions.len() > 0 {
-
-        let worker = near_workspaces::mainnet()
-            .rpc_addr("https://1rpc.io/near")
-            .await?;
-
-        let account = Account::from_file(get_dir_path("bot.namesky.near"), &worker)?;
+        let signer = near_crypto::InMemorySigner::from_file(&get_dir_path("bot.namesky.near"))?;
+        let client = JsonRpcClient::connect(
+            "https://near-mainnet-rpc.allthatnode.com/6MhugNosB7CYZCZaOllUeMJQZJU728hJ",
+        );
 
         let latest_timestamp = data
             .userActions
@@ -64,7 +61,7 @@ async fn main() -> anyhow::Result<()> {
             .map(|user_action| build_post_text_by_user_action(user_action))
             .join("\n");
 
-        send_post(&account, post_text.clone()).await.into_result()?;
+        send_post(&signer, &client, post_text.clone()).await?;
         write_u128(latest_timestamp, &filepath);
         dbg!(
             "Query actions by {}, latest timestamp: {}, post_text: {}",
