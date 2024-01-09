@@ -15,6 +15,8 @@ use crate::post::*;
 pub mod post;
 pub mod user_action;
 pub mod utils;
+pub mod query_validator_rewards;
+pub mod validator_action;
 
 #[derive(Serialize)]
 struct Vars {

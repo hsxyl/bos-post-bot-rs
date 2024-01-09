@@ -93,11 +93,32 @@ pub fn convert_near_amount_to_human_readable(value: u128) -> String {
     let whole_part = &value_str[0..len - 24];
 
     let fractional_part = &value_str[len - 24..len - 22];
-    dbg!(&fractional_part);
     if fractional_part.starts_with("00") {
         return format!("{} N", whole_part);
     }
     format!("{}.{} N", whole_part, fractional_part)
+}
+
+pub fn convert_oct_amount_to_human_readable(value: u128) -> String {
+    let value_str = value.to_string();
+    let len = value_str.len();
+
+    if len <= 18 {
+        let mut fractional_part = &value_str[len - 18..];
+        if fractional_part.len() > 2 {
+            fractional_part = &fractional_part[0..2]
+        }
+        let formatted_decimal = format!("0.{} Oct", fractional_part);
+        return formatted_decimal;
+    }
+
+    let whole_part = &value_str[0..len - 18];
+
+    let fractional_part = &value_str[len - 18..len - 16];
+    if fractional_part.starts_with("00") {
+        return format!("{} Oct", whole_part);
+    }
+    format!("{}.{} Oct", whole_part, fractional_part)
 }
 
 #[test]
