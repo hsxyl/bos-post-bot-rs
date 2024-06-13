@@ -46,7 +46,7 @@ async fn main() -> anyhow::Result<()> {
     if data.userActions.len() > 0 {
         let signer = near_crypto::InMemorySigner::from_file(&get_dir_path("bot.namesky.near"))?;
         let client = JsonRpcClient::connect(
-            "https://near-mainnet-rpc.allthatnode.com/6MhugNosB7CYZCZaOllUeMJQZJU728hJ",
+            "https://rpc.mainnet.near.org",
         );
 
         let latest_timestamp = data
@@ -75,7 +75,7 @@ async fn main() -> anyhow::Result<()> {
 }
 
 pub async fn query_user_action(nano_timestamp: u128) -> UserActionData {
-    let endpoint = "https://api.thegraph.com/subgraphs/name/hsxyl/namesky-production";
+    let endpoint = "https://gateway-arbitrum.network.thegraph.com/api/a72f540d5114d097f49f99d3d2cda08c/subgraphs/id/2wnxpRwCcyNy6z4hBZGfVsyALFQSfHo84UC8wSSceJcu";
     let query = r#"
   query GetUserActionsByUserId(
       $last_timestamp: BigInt = ""

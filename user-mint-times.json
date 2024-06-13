@@ -1,0 +1,2778 @@
+{
+  "data": {
+    "users": [
+      {
+        "account_id": "038a70cb69154096d9783b962db73dccc51476af09701b6dc54a72c437041536",
+        "mint_times": 1
+      },
+      {
+        "account_id": "0ai.near",
+        "mint_times": 36
+      },
+      {
+        "account_id": "0xbref.near",
+        "mint_times": 9
+      },
+      {
+        "account_id": "1504.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "1686.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "168a95315fecc5aed3abf31b408c9ff8541da9165246ff3d9aaff7af87bab746",
+        "mint_times": 3
+      },
+      {
+        "account_id": "18plus.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "1ce2567f7f49cb34cea72179223ec7fc4ba91077da3e01364d0c729dfbe26467",
+        "mint_times": 1
+      },
+      {
+        "account_id": "1chutthoi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "2026is.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "23071999.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "2a9d96d3213e2a3620ac2046b49dc5b9d825cfc8098f9be767fe5bc25ddb8144",
+        "mint_times": 1
+      },
+      {
+        "account_id": "3letters.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "490.near",
+        "mint_times": 137
+      },
+      {
+        "account_id": "52.near",
+        "mint_times": 5
+      },
+      {
+        "account_id": "5864.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "8c267d661a9578ee8092d787914c4498f8359224fdfcb9e3cbe4fcb2f54ba611",
+        "mint_times": 1
+      },
+      {
+        "account_id": "9211e0e1984e21a81713abdb2e102251b5c1e7999be07bbaa6e06bdfdf5b53c1",
+        "mint_times": 3
+      },
+      {
+        "account_id": "9339.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "94cc163da6cc1e03c1bb948c718a2621e3f00404f5797eb5d6b2e6973a0c976b",
+        "mint_times": 2
+      },
+      {
+        "account_id": "96699.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "9968.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "a-100.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "a8c4b9d215fe26bb1453871c3cabe0b35edc85affe9b0600a6441150daaa5278",
+        "mint_times": 1
+      },
+      {
+        "account_id": "a99448ef6d5804ddfde7121eddd815f9d32b4128e97eceb8c41132995baa2010",
+        "mint_times": 3
+      },
+      {
+        "account_id": "aa9d9b77605b42d72b4e4589a1ac7df42efb1c92f55c6a11db25dd6b69da6df9",
+        "mint_times": 2
+      },
+      {
+        "account_id": "acaryln.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "acf441159a03e7b7b2e5cf899b79bc48b8004c19878671d9d5833a4b6b48f2dc",
+        "mint_times": 1
+      },
+      {
+        "account_id": "adapp.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "adeade.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "adel500.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "aditino123.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "af12d868640673e531e6cc28092d34635708299afff27ba08c64d174d69b9ff9",
+        "mint_times": 1
+      },
+      {
+        "account_id": "aftaft.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "aiml.near",
+        "mint_times": 4
+      },
+      {
+        "account_id": "aitechlabs.tg",
+        "mint_times": 1
+      },
+      {
+        "account_id": "alexander2804.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "aln22.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "alove.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ammunition.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ance.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "angess.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "anhdasai.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "anhphan2018.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "annabellaa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "annastoilova.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "annielam.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "anthea34.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "anyenlive.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "apolffd.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "apolog.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "applica134.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "aqkk.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "arage.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "arent.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "armeds.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "arrance.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "artemise.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "aufv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "aum.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "aureliaa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "aurorae.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "autocannon.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "babyka.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bachkhuyen.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bachkim9.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bachlongno1.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bachnguyen7.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "backsterfrance.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "backsterswit.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "backst.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "badcity.near",
+        "mint_times": 6
+      },
+      {
+        "account_id": "baduncle.near",
+        "mint_times": 31
+      },
+      {
+        "account_id": "bahubadi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "balana.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ballistic.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bamy.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "banhbaonhanthit.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bantasky.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "baocho1505.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "baongocc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bautroixanh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "beamm.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "beaning.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "becun.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "belike.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bernicea.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bild96.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "bingodo.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "binhboong.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "blingd.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "blowgun.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "blued.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bocean.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bomino.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bonehedz.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "boobytrap.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "boujee.near",
+        "mint_times": 13
+      },
+      {
+        "account_id": "brennaa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bridgeta.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "brigitta.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "brotherf.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "brunole.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bruno-tu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "bsimo.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "btrhg.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "built-on.near",
+        "mint_times": 14
+      },
+      {
+        "account_id": "bullwhip.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "buoi11.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "c009368b9182f2327c042eaf5f0597e6e329de459548b07b77e960d34d7ea45d",
+        "mint_times": 3
+      },
+      {
+        "account_id": "calanthae.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "calistas.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "calliopea.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "camly111.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cam_nhung.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "candaces.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "caodinhqui.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "caonam88.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "caoqui186.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "caotinh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "caovankhai.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "caramen.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "carbine.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "carot186.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "catalin.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "catapult.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cauchu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cead.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ceilin.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ceridwena.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "changchang25.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "chicharra.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "chikato.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "chiledanh12.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "chinazes.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "christabela.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "chuoichuoi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ciaraen.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cious.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "clashofclan.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "clawv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cleaver.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cleopatra2.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "club55.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cocacol.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "code5.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "coldy.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "community348.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cornflower.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "cosimaa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "crans.near",
+        "mint_times": 11
+      },
+      {
+        "account_id": "cread.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "creditd.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cronus.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "cuocdoi1212.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cuocdoi123.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "cuongdcdev.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "curmello.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "daddy02.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "damsay123.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "damsay.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "danatan.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dangminhanh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dangngocc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "danielsbethany.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "danlat.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "danniedan.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "daocv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dariae.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "davishui.near",
+        "mint_times": 73
+      },
+      {
+        "account_id": "delta3.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "delwyna.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "denday.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "diem_phuong.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "diem_trang.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dieuanhle.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dilmah21.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dilsan12.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dilyse.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dinary.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "djson.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "dm23.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dmla.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dnpt.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dominio.near",
+        "mint_times": 100
+      },
+      {
+        "account_id": "donnaa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dorisae.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dotnot.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dripr.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "drusillaa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dulciee.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "dund.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "eadv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "eakd.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "eb04d6705ab590a4549ad9ec8319babca9556a92424416e3775f1d09c90578e4",
+        "mint_times": 3
+      },
+      {
+        "account_id": "ebanko.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ebris.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "edits.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "eject.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "elka5.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "elmira4554.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "eltes.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "emei.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "emsi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "enyas.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "epend.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "esjs.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "etails.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "eternalaeon.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "evginy.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "f0e4509557e25c4fa99591e71f24365778d72b80bcf71834279a72d71df94be6",
+        "mint_times": 1
+      },
+      {
+        "account_id": "f11.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "f7a6d0b273167cf4b35b41d1505f041d0b9eabb5b58d38c525356f647e3afce1",
+        "mint_times": 1
+      },
+      {
+        "account_id": "famouss.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "fankcet.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "fanty.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "farwalker3.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "fays.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "fblauer.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "feb56ary.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "fedotovaev.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "fellz2132.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "filippa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "finu.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "firearm.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "flintlock.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "flipflop.near",
+        "mint_times": 18
+      },
+      {
+        "account_id": "flowscience.near",
+        "mint_times": 5
+      },
+      {
+        "account_id": "fornears.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "fullstackvn.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "funfill.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "funnyu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "futured.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "galina1234.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "garinetwork.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "gatling.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "gauvlog.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "gaylordpepe.near",
+        "mint_times": 5
+      },
+      {
+        "account_id": "gazez.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "gegeges.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "gehog.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "gemmas.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "genai.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "gfdtr.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "giagia999.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "giagia.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "gillians.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "goat.near",
+        "mint_times": 6
+      },
+      {
+        "account_id": "gokhanerbatu.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "goldbox.near",
+        "mint_times": 6
+      },
+      {
+        "account_id": "govn.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "gretas.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "grom25gr.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "gunpowder.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "haird.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "haizang.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hang2003.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "haoquang.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "harlows.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hawe.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hcobak.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "heckh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hemev.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hgfdhg.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hicken.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hila.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hindaa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hoamydong.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hoangha777.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hoangmyle.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hoangvietanh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hoatmy.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "honghainam.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hongnhan22.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hongtra.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hought.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "howitzer.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "hrase.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hrash.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hugies.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hukado.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hungbvtc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "hunghomhinh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "huonghuong01.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "huunam.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "iami.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "icookies.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "icu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "imic.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "imposible.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ingdom.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ipad.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ipus.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "irfiirfiirfiirfiirfiirfiirfiirfi",
+        "mint_times": 2
+      },
+      {
+        "account_id": "irrel.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "is-building-on.near",
+        "mint_times": 8
+      },
+      {
+        "account_id": "itsmarcus.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ivys.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "izza.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "jabask.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "jiang_wei.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "jk6886.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "johnmax.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "josefophe.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kacross.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kaikainai.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kaiosin.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kalena.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kalloc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "karak.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "karamzina.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kati772.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "keebles.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kenbtf.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "khachsao.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "khadich.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "khamkham876.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "khanhi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "khanhnguyen123.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kimtehu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kiua.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kokkak.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kone.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kongfung.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kot1337.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "krikkraktrak.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "kylies.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "laborf.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ladygaga.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "laler.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lamkhan.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lampb.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lamphatnhi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "langtuvotinh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lanhquadi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "launchpadlift.near",
+        "mint_times": 11
+      },
+      {
+        "account_id": "ld5.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ldana.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "leanceaner.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lecaongao.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "leduyba.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "legam.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lehaityt.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lephamminhthy.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "le_pham_thanh_truc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lephamthanhtruc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "le_thanh_tu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lethanhtu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "le_thi_cam_nhung.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lethicamnhung.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "letitias.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "liaa.near",
+        "mint_times": 22
+      },
+      {
+        "account_id": "lienka.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "liight.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "lijiang.near",
+        "mint_times": 5
+      },
+      {
+        "account_id": "listv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lnear01.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lolol.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "longtam.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "longthinga.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lonk.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lopziu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "loreleis.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "loudd.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lovelysugar.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lover98.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lovesontungmtp1.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "loveu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "loveyouandloveme.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lucindas.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "luisf.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "luuly.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "lytran123.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "maamamiya.near",
+        "mint_times": 4
+      },
+      {
+        "account_id": "maddy619.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "magnh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "maihuongvip.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mailam123.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "maimai55.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "main68.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "maindsf.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mainwall.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "majorv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mana1712.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mandivel.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mapdia.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "marior.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "masterofdisaster.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "matesoul.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "maykho.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mazerunner.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "meadows.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "medicc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "meekblaze.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "memebear.near",
+        "mint_times": 5
+      },
+      {
+        "account_id": "metaxs.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "micaelas.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "miconleo.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mikimydog.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "milanotaken.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minamia.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minatoken.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minhbach.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minhcongphan.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minhdat17.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minhman123.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minhtamtamminh.near",
+        "mint_times": 5
+      },
+      {
+        "account_id": "minhthaogl.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minh_thy.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minhthy.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minhtran20.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "minorityprogrammers.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mob.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "morethan.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mousd.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "mrcheese.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mssv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mycertificate.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mysky.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "mysox.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "n68.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nakali.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nami45.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "narutu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nate.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "nathanx.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "ndbi.near",
+        "mint_times": 4
+      },
+      {
+        "account_id": "ndfd.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nditouyo.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nearfunny5.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nearspanish.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nearversedao.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "newkha.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "newss.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nextv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nextx.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "nftmaximalist.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ngfdh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ngohieutp.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nguyenhao32.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nguyenhoan8.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nguyenhuong2020.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nguyenly123.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nguyennhatanh111.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nguyenthanh876.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nguyentrang2023.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nhanhnhanh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nhoa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nikolays.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ninomix1.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "njnjavan.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "noithatthanhdat.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "nonothenono.near",
+        "mint_times": 13
+      },
+      {
+        "account_id": "noses.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ns_b.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntique.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntjgh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntphat2617.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntphat2618.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntphat2619.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntphat2620.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntphat2621.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntphat2622.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntphat2623.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntphat2624.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntphat2625.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ntphat2640.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "ntvo.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "oast.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "obamasonictrumpskidanovpolosukhinsonicinuten.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "octopusvietnam.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "oct-stake.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "odettes.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "oever.near",
+        "mint_times": 5
+      },
+      {
+        "account_id": "oldgun.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "olice.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "omba.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "omorrow.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "onixm.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "oonoo.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "orderd.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ori6451.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "orldv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "outdoorv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "outh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "oxytocin.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "pagepage.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "partners.learnclub.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "pekpytby.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "pepebear.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "pepepumper.near",
+        "mint_times": 8
+      },
+      {
+        "account_id": "phachloi12344.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phamkhien.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "pham_nguyen_diem_phuong.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phamnguyendiemphuong.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "pham_nguyen_diem_trang.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phamnguyendiemtrang.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phampham.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phamthanh11.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phamvuphuong98.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phanletran.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phanthiet11.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phapsuvn.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phatdat3304.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phoebesa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phuongnguyen2024.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phuong-pham.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "phuongpham.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "pickone.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "pizzav.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "player3.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "plugg.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "pple.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "precrastinator.near",
+        "mint_times": 9
+      },
+      {
+        "account_id": "priscillas.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "profit.near",
+        "mint_times": 7
+      },
+      {
+        "account_id": "project438.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "quachkha.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "qualitys.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "quangcha1.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "quangcha.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "quanglamson.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "quangnguyen121.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "quangtran876.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "quanquan888.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "quizzz.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "quocthai222.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "quytuthien.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "r6y8.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ramav.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "rases.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "reup.near",
+        "mint_times": 4
+      },
+      {
+        "account_id": "rezadeli.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "ricksharma.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ringv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "rinhquave.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "riverv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "rnrndsf.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "robertyan.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "rogues.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "rongv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ronyle.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ronytu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "roseline77.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "rror.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "rub3n.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "rubenm4rcus.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "ruthsa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ruthv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "s68.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sahista4341f.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "sainthiago.near",
+        "mint_times": 19
+      },
+      {
+        "account_id": "sanana.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sancho-le.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sandoge.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "satogi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "satoo.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sau6.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sbank.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sdom.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "searchh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "seasonss.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "shadow02.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "shanghen.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "shelly-le.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "shyka.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "shyshadow.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "siblin.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "siem.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "singg.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sky.near",
+        "mint_times": 9
+      },
+      {
+        "account_id": "skyone.near",
+        "mint_times": 10
+      },
+      {
+        "account_id": "sleetname.tg",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sleet.near",
+        "mint_times": 182
+      },
+      {
+        "account_id": "slie.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "smleekr.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sniped.near",
+        "mint_times": 14
+      },
+      {
+        "account_id": "sona-trang.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sona-truc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sona-tu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sonoon.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "sonoon-thy.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "soosweb3.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "soshimi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "soshi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "specia.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "supermassiveblackhole.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "superstaker.near",
+        "mint_times": 6
+      },
+      {
+        "account_id": "surendrachutiya.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "svetlana7667.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "taina.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "talavua.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "taliband.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "talullas.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tayhoa.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "teamrocket.near",
+        "mint_times": 21
+      },
+      {
+        "account_id": "thanhhue.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thanhthanh987.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thanh_truc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thaukinh.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thegioi90.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thetrankiemkhach.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thisisatest.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thisisfine.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thu0phu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thuthao32.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thuyennv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thycam.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thy-le.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thyphuong.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thysonoon.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "thysoon.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tictoc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tieuthuotp.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tigiongg6.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "timetime.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tin-pham.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tinsona.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ti-pham.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "toed.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tomcuiser.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tonhu1234.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "toni2411992.near",
+        "mint_times": 3
+      },
+      {
+        "account_id": "tphat19919.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tphat2616.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tphat280820.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trancam.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trandieunhi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trang-pham.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trang-tin.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trangtruc.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tranhong123.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trankhani.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tranlacquan.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tranlongttt.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tranmy.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trannhi7733.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trannhimmm.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trannhi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tranphatlac.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trantruongnguyen.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tremens.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trendw3.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trongle12345.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "truccam.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "truc-le.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trucphuong.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trucsona.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "truc_thy.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "trypnelo.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tu-le.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tuthy1719.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "tu_trang.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "u6ty.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "uelv.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "unders.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "unny.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "upchen.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "upils.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "vanbinh4.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "vangeu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "vanphap.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "vantinh737.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "vbbank.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "veneris.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "vhieu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "viablec.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "vikash.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "vladec.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "vuogn6.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "vvr.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "wayawa.near",
+        "mint_times": 476
+      },
+      {
+        "account_id": "whendacha.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "williamxx.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "wrongg.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "xanhhien.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "xavizaka.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "xsb.near",
+        "mint_times": 11
+      },
+      {
+        "account_id": "xuancho.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "xuweiguo.near",
+        "mint_times": 4
+      },
+      {
+        "account_id": "xxx911.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "yinhao.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "ylanova.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "youmoney.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "youyouu.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "yt4t.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "zahrah.near",
+        "mint_times": 2
+      },
+      {
+        "account_id": "zenmi.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "zhanna9559.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "zidance.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "zingspeed.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "zjunior.near",
+        "mint_times": 1
+      },
+      {
+        "account_id": "zylerhean.near",
+        "mint_times": 1
+      }
+    ]
+  }
+}
